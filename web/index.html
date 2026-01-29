@@ -100,3 +100,31 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CarBot Control Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🚗 CarBot Control Panel</h1>
+
+<div class="camera">
+  <img id="cameraFeed" src="http://CAMERA_IP:81/stream" />
+</div>
+
+<div class="controls">
+  <button onclick="sendCmd('forward')">⬆ Forward</button>
+  <div>
+    <button onclick="sendCmd('left')">⬅ Left</button>
+    <button onclick="sendCmd('stop')">⏹ Stop</button>
+    <button onclick="sendCmd('right')">➡ Right</button>
+  </div>
+  <button onclick="sendCmd('backward')">⬇ Backward</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
